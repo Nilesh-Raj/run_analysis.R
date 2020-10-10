@@ -34,22 +34,25 @@ activity_labels is named as same and by looking at the structure,
 no. of column was 2 and rows were 6
 its column name was renamed as _Index_ and _Activity_names_
 
-# as the no. of column in Test_set is same as no. of rows of features_list so i renamed Test_set column name as rows of second column of features_list
+ as the no. of column in Test_set is same as no. of rows of features_list so i renamed Test_set column name as rows of second column of features_list
 and after that checking wheter Test_set column names was changed.
 
-# here using select function of dplyr package to select all the column of Test_set having named in that as mean() or std() and name that as Set_training
+ here using select function of dplyr package to select all the column of Test_set having named in that as mean() or std() and name that as Set_training
 
 after that using cbind function all the test dataset bind together and that named as Test_set and finally looked at the structure of Test_set
 
 **similarly did all things for training dataset and after binding named that final dataset as Training**
-now binding Test and Training datasetusing rbind() function into one and named as Combined_data.
+now binding Test and Training dataset using rbind() function into one and named as Combined_data.
 
-**using factors first two columns are set based on activity**
- for that setting column 1 and column 2 in a single variable and set both column as factor variable on activity
+now factor function is used for 1st as well as second, 1st for ID itself and second as the activity_names i.e. second column of activity_labels.
 
-** i used melt function 
+for finding average of each variabe and each activity first we have to melt the combined_data then using the dcast function we can apply mean function to find average.
+i used melt function that that reshape the first column and second column as it is and 3rd column as the column name of combined_data and 4th column as the data correspond to 3rd column.
+for the 5th step answer i used dcast function to find average as required.
 
-** i used pipe operator on Combined_data to find mean of each column 
+now 
+
+
 
 
 
