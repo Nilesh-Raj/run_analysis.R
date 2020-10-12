@@ -1,4 +1,4 @@
-## Assignment description of script
+# Assignment description of script
 first i have downloaded the dataset using download.file function and saved at the location specified in the function.
 the file downloaded was in the zip file, for that first i have to unzip it first using unzip function.
 
